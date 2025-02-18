@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MainApp {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VideoBackground {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background: rgba(128, 128, 128, 0.655);
+
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.MusicPlayer {
+  height: 80%;
+  width: 30%;
+  border-radius: 1rem;
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  background: rgba(153, 152, 152, 0.371);
+  /* background: transparent; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 8px;
+  padding: 20px;
+
+  @media screen and (max-width:768px ) {
+    width: 98%;
+    height: 95%;
+  }
+
+  img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+  }
+
+  
+}
+
+.song-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  gap: 10px;
+
+  h3{
+    font-size: 27px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+}
+.timing{
+  display: flex;
+  width: 100%;
+  height: 13%;
+  align-items: flex-end;
+  justify-content: space-between;
+  p{
+    font-size: 17px;
+  }
+}
+.progress{
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  width: 74%;
+  height: 35%;
+
+  & input{
+    width: 100%;
+    height: 10px;
+  }
+}
+.playButtons{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 13%;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+
+  .icon{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+  }
+}
