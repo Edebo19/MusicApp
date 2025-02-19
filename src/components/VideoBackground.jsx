@@ -4,7 +4,7 @@ const VideoBackground = ({e}) => {
     
   return (
     <div className='VideoBackground'>
-        <img src= {e} alt="" />
+        <img src= {e} alt="" loading="lazy" />
     </div>
   )
 }

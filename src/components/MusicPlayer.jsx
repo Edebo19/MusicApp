@@ -81,7 +81,7 @@ const MusicPlayer = ({
         <p>{currentTrack.Artist}</p>
       </div>
       <div className="songimage-holder">
-        <img src={currentTrack.photo} alt="" />
+        <img src={currentTrack.photo} alt="" loading="lazy" />
       </div>
       <div className="timing">
         <p>{formatTime(currentTime)}</p>
